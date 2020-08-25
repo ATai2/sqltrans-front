@@ -37,10 +37,10 @@ export default {
    }
  },
  mounted(){
-   this.form.name=   localStorage.setItem("sqltrans.name" );
-   this.form.url= localStorage.setItem("sqltrans.url" );
-   this.form.driver=  localStorage.setItem("sqltrans.driver" );
-   this.form.pwd=   localStorage.setItem("sqltrans.pwd" );
+   this.form.name=   localStorage.getItem("sqltrans.name" );
+   this.form.url= localStorage.getItem("sqltrans.url" );
+   this.form.driver=  localStorage.getItem("sqltrans.driver" );
+   this.form.pwd=   localStorage.getItem("sqltrans.pwd" );
  },
  beforeRouteLeave(to,from,next){
    localStorage.setItem("sqltrans.name", this.form.name);

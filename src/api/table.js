@@ -7,3 +7,11 @@ export function getList(params) {
     params
   })
 }
+
+export function getTables(params){
+  return request({
+    url: '/tables',
+    method: 'get',
+    params
+  })
+}
